@@ -2,22 +2,34 @@
 <html>
 <head>
 <style>
+  html{
+     margin-top: 10%;
+  }
 body {
+ 
   margin: 0 auto;
-  min-width: 250px;
-  max-width: 1300px;
+  max-width: 60%;
   
   /* The image used */
-    background-image: url("black3.jpg");
+    background: url("black3.jpg")  no-repeat center center fixed;
 
     /* Full height */
     height: 100%; 
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    overflow:hidden;
     
+}
+.leftside {
+margin: auto;
+background-color: black;
+position: fixed;
+top: 0;
+left: 0;
+right: 100;
+bottom: 0;
+
+height:100%;
+width: 15%;
 }
 
 
@@ -94,10 +106,14 @@ ul li.checked::before {
 
 /* Style the header */
 .header {
-  background-color: maroon;
+  
+  background-color: black;
   padding: 40px 50px;
-  color: #000;
+  color: blue;
   text-align: left;
+  font-size: 30px;
+  font-family: monospace;
+  
 }
 
 /* Clear floats after the header */
@@ -137,11 +153,13 @@ input {
 <body>
 
 
+
 <div id="myDIV" class="header">
   <h2 style="margin:5px">My List</h2>
   <input type="text" id="myInput" placeholder="Name...">
   <span onclick="newElement()" class="addBtn">Add</span>
 </div>
+
 
 <ul id="myUL">
   <li>Hit the gym</li>
@@ -151,6 +169,8 @@ input {
   <li>Read a book</li>
   <li>Organize office</li>
 </ul>
+
+
 
 <script>
 // Create a "close" button and append it to each list item
