@@ -19,17 +19,12 @@ body {
     overflow:hidden;
     
 }
-.leftside {
-margin: auto;
-background-color: black;
-position: fixed;
-top: 0;
-left: 0;
-right: 100;
-bottom: 0;
 
-height:100%;
-width: 15%;
+.box {
+  width: 15%;
+  height: 100%;
+  background-color: black;
+  float: left;
 }
 
 
@@ -52,6 +47,7 @@ ul li {
   background: #33373d;
   font-size: 18px;
   transition: 0.2s;
+  color:#fff;
   
   /* make the list items unselectable */
   -webkit-user-select: none;
@@ -152,6 +148,8 @@ input {
 </head>
 <body>
 
+<div class="box"></div>
+
 
 
 <div id="myDIV" class="header">
@@ -162,12 +160,12 @@ input {
 
 
 <ul id="myUL">
-  <li>Hit the gym</li>
-  <li class="checked">Pay bills</li>
-  <li>Meet George</li>
-  <li>Buy eggs</li>
-  <li>Read a book</li>
-  <li>Organize office</li>
+  <li>Overwatch</li>
+  <li class="checked">League</li>
+  <li>Csgo</li>
+  <li>WoW</li>
+  <li></li>
+  <li></li>
 </ul>
 
 
